@@ -1,0 +1,7 @@
+{
+  "name": "Prediction",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
