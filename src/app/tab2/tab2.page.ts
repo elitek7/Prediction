@@ -21,7 +21,7 @@ export class Tab2Page {
 
     this.age.getAge(this.name).subscribe(response => this.predicted_age = response["age"]);
     this.gender.getGender(this.name).subscribe(response => this.predicted_gender = response["gender"]);
-    this.nationality.getNationality(this.name).subscribe(response => this.predicted_gender = response["nationality"]);
+    this.nationality.getNationality(this.name).subscribe(response => this.predicted_nationality = response["country"].map((t: any) => t["country_id"]));
 
   }
 
