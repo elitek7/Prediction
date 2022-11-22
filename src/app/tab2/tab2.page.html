@@ -13,5 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item fill="solid">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)] = "name" type="email"></ion-input>
+  </ion-item>
+
+  <ion-button (click) = "predict()">Predict</ion-button>
+
+  <p *ngIf="predicted_age > 0">{{predicted_age}}</p>
+  
+  <p>{{predicted_gender}}</p>
+
 </ion-content>
